@@ -3,12 +3,10 @@ import {
     FaFacebookF,
     FaInstagram,
     FaTwitter,
-    FaLinkedin,
+    Faaedin,
 } from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si";
 import { BsGithub } from "react-icons/bs";
-
-import { Link } from 'react-router-dom'
 
 
 
@@ -35,30 +33,30 @@ const Footer = () => {
                 </div>
 
                 <div className="socialIcons">
-                    <Link to='https://www.instagram.com/imgovind_jee/' target='_blank' className='icon'>
+                    <a herf='https://www.instagram.com/imgovind_jee/' target='_blank' className='icon'>
                         <FaInstagram />
-                    </Link>
-                    <Link to='https://www.facebook.com/govind.jee.3154/' target='_blank' className='icon'>
+                    </a>
+                    <a herf='https://www.facebook.com/govind.jee.3154/' target='_blank' className='icon'>
                         <FaFacebookF />
-                    </Link>
-                    <Link to='https://www.linkedin.com/in/shreegovindjee/' target='_blank' className='icon'>
-                        <FaLinkedin />
-                    </Link>
-                    <Link to="https://leetcode.com/Shree_Govind_Jee/" target='_blank' className='icon'>
+                    </a>
+                    <a herf='https://www.aedin.com/in/shreegovindjee/' target='_blank' className='icon'>
+                        <Faaedin />
+                    </a>
+                    <a herf="https://leetcode.com/Shree_Govind_Jee/" target='_blank' className='icon'>
                         <SiLeetcode />
-                    </Link>
-                    <Link to='https://twitter.com/imgovind_jee' target='_blank' className='icon'>
+                    </a>
+                    <a herf='https://twitter.com/imgovind_jee' target='_blank' className='icon'>
                         <FaTwitter />
-                    </Link>
-                    <Link to='https://github.com/imgovindjee' target='_blank' className='icon'>
+                    </a>
+                    <a herf='https://github.com/imgovindjee' target='_blank' className='icon'>
                         <BsGithub />
-                    </Link>
+                    </a>
 
                     
-                    {/* <span className="icon"><FaFacebookF /></span> */}
-                    {/* <span className="icon"><FaInstagram /></span> */}
-                    {/* <span className="icon"><FaLinkedin /></span> */}
-                    {/* <span className="icon"><FaTwitter /></span> */}
+                    {/* <span className="icon"><FaFacebookF /></span>
+                    <span className="icon"><FaInstagram /></span>
+                    <span className="icon"><Faaedin /></span>
+                    <span className="icon"><FaTwitter /></span> */}
                 </div>
 
                 <div className="infoText">
