@@ -1,0 +1,48 @@
+.switchingTabs{
+    height: 34px;
+    background-color: white;
+    border-radius: 20.5px;
+    padding: 2px;
+
+    .tabItems{
+        display: flex;
+        align-items: center;
+        height: 30px;
+        position: relative;
+
+        .tabItem{
+            height: 100%;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14.5px;
+            position: relative;
+            color: var(--black);
+            z-index: 1;
+            cursor: pointer;
+            transition: color ease .3s;
+
+            // toDO
+            &.active{
+                color: whitesmoke;
+                font-weight: 700;
+            }
+
+            &:hover{
+                color: var(--pink);
+                transition: color ease .3s;
+            }
+        }
+
+        .movingBg{
+            height: 30px;
+            width: 100px;
+            border-radius: 16px;
+            background-image: var(--gradient);
+            position: absolute;
+            left: 0;
+            transition: left cubic-bezier(.88, -0.35, .565, 1.36) .4s;
+        }
+    }
+}

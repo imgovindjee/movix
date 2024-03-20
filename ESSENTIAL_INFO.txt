@@ -1,0 +1,18 @@
+i.>>
+Movies Data API Fetch From
+TMDB(The Movie Database) API SETUP
+
+ii.>>
+all the media-Queries and access components are in
+src/mixins.scss
+
+
+iii.>>
+psedu-Class are madee inside
+src/index.scss ((gradient t0 be changed....))
+
+iv.>>
+SwitchTab.scss part finishing work to be Done
+
+v.>>
+Carousel and Genres section part MOBILE SECTION FINISHING need to be done 
