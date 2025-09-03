@@ -100,8 +100,24 @@ const Carousel = ({ data, loading, endPoints, title }) => {
                                                 {/* POSTER BLOCK SECTION */}
                                                 <div className="posterBlock">
                                                     <Image src={posterUrl} />
-                                                    <Rating rating={item.vote_average.toFixed(1)} />
-                                                    <Genres data={item.genre_ids.slice(0, 2)} />
+{/*                                                     <Rating rating={item.vote_average.toFixed(1)} />
+                                                    <Genres data={item.genre_ids.slice(0, 2)} /> */}
+                                                    <Rating
+                                                      rating={
+                                                        item.vote_average != null && !isNaN(item.vote_average)
+                                                          ? item.vote_average.toFixed(1)
+                                                          : "N/A"
+                                                      }
+                                                    />
+                                                    
+                                                    {item.genre_ids && <Genres data={item.genre_ids.slice(0, 2)} />}
+                                                    
+                                                    <span className="date">
+                                                      {item.release_date || item.first_air_date
+                                                        ? dayjs(item.release_date || item.first_air_date).format("MMM D, YYYY")
+                                                        : "Unknown"}
+                                                    </span>
+
                                                 </div>
 
                                                 {/* MOVIE-TITLE or TV-SHOW(name) */}
